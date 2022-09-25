@@ -1,0 +1,173 @@
+Part 1
+
+    1  pwd
+    2  mkdir gavin
+    3  ls
+    4  cd gavin
+    5  cd
+    6  cd /home/kali/gavin
+    7  mkdir nurem berg
+    8  cd nurem
+    9  cd ../berg
+   10  cd ../..
+   11  cd ~/gavin/nurem
+   12  touch cscprof
+   13  ls
+   14  cp cscprof ../berg
+   15  ls ../nurem
+   16  ls ../berg
+   17  cp cscprof ../berg/cscprof2
+   18  ls ../berg
+   19  cp ../berg/cscprof ./professor
+   20  les
+   21  ls
+   22  cd
+   23  mv gavin profgavin
+   24  ls
+   25  touch oldname
+   26  mv oldname newname
+   27  ls
+   28  rm newname
+   29  ls
+   30  mkdir hellogoodbye
+   31  rmdir hellogoodbye
+   32  rmdir profgavin/berg
+   33  rm profgavin/berg
+   34  rm -r profgavin/berg
+   35  echo Gavin Nurem berg
+   36  echo Gavin Nurem berg > Danbury
+   37  cat Danbury
+   38  echo WCSU > Danbury
+   39  cat Danbury
+   40  echo FLCC >> Danbury
+   41  echo SU >> Danbury
+   42  cat Danbury
+   43  tac Danbury
+   44  sort Danbury
+   45  sudo adduser jsw
+   46  sudo passwd jsw
+   47  su jsw
+   48  whoami
+   49  vim bob
+   50  bob
+   51  ./bob
+   52  ls -l bob
+   53  chmod 744 bob
+   54  ls -l bob
+   55  ./bob
+   56  mkdir monroe
+   57  ls -l | grep monroe
+   58  chmod 754 monroe
+   59  ls -l | grep monroe
+   60  cd monroe
+   61  echo meadowbrook > brighton
+   62  cat brighton
+   63  ls -l brighton
+   64  su jsw
+   65  cd ..
+   66  chmod 755 monroe
+   67  ls -l | grep monroe
+   68  cd monroe
+   69  su jsw
+   70  cd ..
+   71  chmod 777 monroe
+   72  ls -l | grep monroe
+   73  cd monroe
+   74  chmod 777 brighton
+   75  ls -l | brighton
+   76  su jsw
+   77  cd ..
+   78  ls -l /usr/bin/passwd
+   79  mkdir sgid
+   80  chmod 2767 sgid
+   81  ls -l | grep sgid
+   82  chmod 2777 sgid
+   83  ls -l | grep sgid
+   84  su jsw
+   85  mkdir stickybit
+   86  chmod 1777 stickybit
+   87  ls -l | grep stickybit
+   88  cd stickybit
+   89  echo hi > file1
+   90  su jsw
+   91  cd ..
+   92  echo date > pizza
+   93  ls -l pizza
+   94  chmod 744 pizza
+   95  ls -l pizza
+   96  sudo chown jsw pizza
+   97  ls -l pizza
+   98  sudo chgrp jsw pizza
+   99  ls -l pizza
+  100  su jsw
+  101  sudo chown nurem:nurem pizza
+  102  sudo chown kali:kali pizza
+  103  ls -l
+  104  su jsw
+  105  sudo addgroup pentesters1
+  106  sudo addgroup pentesters2
+  107  sudo usermod -a -G pentesters1.pentesters2 jsw
+  108  sudo usermod -a -G pentesters1,pentesters2 jsw
+  109  grep pentesters /etc/group
+  110  groups jsw
+  111  cat /etc/group
+  112  sudo usermod -G pentesters1 jsw
+  113  groups jsw
+  114  sudo usermod -a -G pentesters1,pentesters2 jsw
+  115  sudo gpasswd -d jsw pentesters2
+  116  groups jsw
+  117  sudo adduser alice
+  118  sudo deluser alice
+  119  sudo addgroup crytographers
+  120  sudo delgroup cryptographers
+  121  delgroup crytographers
+  122  cd /
+  123  ls -a
+  124  ls -F
+  125  ls -R
+  126  ls -R | more
+  127  ls -R | less
+  128  clear
+  129  find / -name ping 2>&1 | grep -v "Permission denied"
+  130  man find
+  131  vim months
+  132  cd
+  133  vim months
+  134  head months
+  135  head -7 months
+  136  head -n 7 months
+  137  head -n -3 months
+  138  tail months
+  139  tail -3 months
+  140  tail -n 3 months
+  141  tail +3 months
+  142  tail -n +3 months
+
+John
+
+  148  cat /etc/passwd
+  149  sudo cat/etc/shadow
+  150  sudo john
+  151  man john
+  152  sudo john --test
+  153  sudo adduser weissman
+  154  Y
+  155  sudo adduser upper
+  156  sudo adduser lower
+  157  sudo adduser mixed
+  158  sudo adduser story
+  159  cat /etc/passwd
+  160  sudo cat /etc/shadow
+  161  man unshadow
+  162  sudo unshadow
+  163  sudo unshadow /etc/passwd /etc/shadow > rochester.txt
+  164  cat rochester.txt
+  165  sudo john --wordlist-/user/share/john/password.lst --format-crypt rochester.txt
+  166  sudo john --wordlist=/user/share/john/password.lst --format-crypt rochester.txt
+  167  sudo john --wordlist=/user/share/john/password.lst --format=crypt rochester.txt
+  168  sudo john --show --format=crypt rochester.txt
+  169  sudo john --wordlist=/user/share/john/password.1st --format=crypt rochester.txt
+  170  sudo john --wordlist=/usr/share/john/password.1st --format=crypt rochester.txt
+  171  sudo john --wordlist=/usr/share/john/password.lst --format=crypt rochester.txt
+  172  sudo john --show --format=crypt rochester.txt
+  173  sudo rm /root/.john/john.pot
